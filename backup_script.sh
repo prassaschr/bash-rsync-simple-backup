@@ -86,7 +86,7 @@ else
 	echo "$(date "+%Y-%m-%d %k:%M:%S") - WARNING: Backup device could not be unmounted." >> "$LOG_FILE"
 	echo "$(date "+%Y-%m-%d %k:%M:%S") - WARNING: Backup device could not be unmounted."
 fi
-
+# echo "This is the body" | mail -s "Subject" -aFrom:Harry\<harry@gmail.com\> someone@example.com
 # End entry in the log
 echo "" >> "$LOG_FILE"
 exit 0
