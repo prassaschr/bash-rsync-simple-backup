@@ -3,17 +3,13 @@
 ############################################
 ##
 ## VARIABLES
-##
-
 # Set source location
 BACKUP_FROM="/give/your/source/path/here/"
-
 # Set target location
 BACKUP_TO="/give/your/destination/path/here/" #Backup destination
-BACKUP_DEV="xxxxxxx-xxxxx-xxxxxxxxxxxxxxx" #UUID of the disk - after format check again
+BACKUP_DEV="xxxxxxx-xxxxx-xxxxxxxxxxxxxxx" #UUID of the disk - after a format, check again the UUIDs
 BACKUP_MNT="/give_your_mount_point_here"
 BACKUP_EXCLUDE_BIN="/.*" #Exclude the hidden files, such as recycle bin or other
-
 # Log file
 LOG_FILE="/var/log/backup_script.log"
 ###########################################
