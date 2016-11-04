@@ -4,7 +4,7 @@
 ############################################
 ##
 ## VARIABLES
-# Set source location
+# Set source location 
 BACKUP_FROM="/give/your/daily/backup/source/path/here/"
 # Set target location
 BACKUP_TO="/give/your/weekly/destination/path/here/" #Backup destination
@@ -69,8 +69,8 @@ echo "$(date "+%Y-%m-%d %k:%M:%S") - Sync started... Please wait."
 
 # Start sync
 if rsync -avz --delete --exclude "$BACKUP_EXCLUDE_BIN" "$BACKUP_FROM" "$BACKUP_TO" &>> "$LOG_FILE"; then
-        echo "$(date "+%Y-%m-%d %k:%M:%S") - Sync completed succesfully." >> "$LOG_FILE"
-        echo "$(date "+%Y-%m-%d %k:%M:%S") - Sync completed succesfully."
+        echo "$(date "+%Y-%m-%d %k:%M:%S") - Weekly sync completed succesfully." >> "$LOG_FILE"
+        echo "$(date "+%Y-%m-%d %k:%M:%S") - Weekly sync completed succesfully."
 else
         echo "$(date "+%Y-%m-%d %k:%M:%S") - ERROR: rsync-command failed." >> "$LOG_FILE"
 	echo "$(date "+%Y-%m-%d %k:%M:%S") - ERROR: Unable to sync." >> "$LOG_FILE"
